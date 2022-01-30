@@ -1,0 +1,57 @@
+.test-list:hover {
+  background-color: #6d6dc5;
+  color: white;
+}
+
+.alert-yellow {
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: #d9df91;
+  color: #7a8113;
+}
+
+.alert-blue {
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: #87b6dd;
+  color: #0e485a;
+}
+
+.alert-green {
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: #85d889;
+  color: #144b1b;
+}
+
+.row-box {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.col-6 {
+  width: 50%;
+  border: 1px solid #c973cc;
+  background-color: #e08fe5;
+}
+
+.col-4 {
+  width: 33.33333%;
+  border: 1px solid #c973cc;
+  background-color: #e08fe5;
+}
+
+.col-3 {
+  width: 25%;
+  border: 1px solid #c973cc;
+  background-color: #e08fe5;
+}
+/*# sourceMappingURL=test.css.map */

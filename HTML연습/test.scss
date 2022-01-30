@@ -1,0 +1,50 @@
+.test-list {
+    &:hover {
+        background-color: rgb(109, 109, 197);
+        color: white;
+    }
+}
+
+@mixin 박스디자인($bg-color,$font-color) {
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: $bg-color;
+    color: $font-color;
+}
+
+.alert-yellow {
+    @include 박스디자인(rgb(217, 223, 145), rgb(122, 129, 19))
+}
+
+.alert-blue {
+    @include 박스디자인(rgb(135, 182, 221), rgb(14, 72, 90))
+}
+
+.alert-green {
+    @include 박스디자인(rgb(133, 216, 137), rgb(20, 75, 27))
+}
+
+@mixin column($num) {
+    width: ($num/12*100);
+    border: 1px solid rgb(201, 115, 204);
+    background-color: rgb(224, 143, 229);
+}
+
+.row-box {
+    width: 100%;
+    display: flex;
+}
+
+.col-6 {
+    @include column(6%);
+}
+
+.col-4 {
+    @include column(4%);
+}
+
+.col-3 {
+    @include column(3%);
+}
