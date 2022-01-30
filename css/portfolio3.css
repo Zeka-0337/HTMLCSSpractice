@@ -1,0 +1,187 @@
+@font-face {
+    font-family : '나눔스퀘어';
+    src : url(../font/NanumSquareR.woff);
+}
+body {
+    margin : 0;
+    font-family: '나눔스퀘어';
+}
+html {
+  line-height : 1.15; /*기본 행간 높이*/
+}
+
+form, input, div {
+    box-sizing: border-box;
+}
+
+p, h4, h3, h2, h1, span {
+    transform: rotate(0.03deg);
+    margin: 0px;
+
+}
+.side-menu {
+    display: fixed;
+    width: 200px;
+    height: 100%;
+    background-color: blueviolet;
+    
+}
+
+.grid-all {
+    display: grid;
+    grid-template-columns: 40px 100%;
+}
+
+.grid-left {
+    grid-column: 1/2;
+    background-color:aqua
+}
+
+.grid-right {
+    grid-column: 2/3;
+    background-color: coral
+}
+
+.left-menu-bar {
+    width: 200px;
+    height: 100%;
+    background-color: darkslateblue;
+}
+
+.top-nav {
+    color: gray;
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0px 3px #eee;
+    vertical-align: middle;
+    height: 70px;
+    display: flex;
+}
+
+.btn-search {
+    border: 1px solid lightgray;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #4b5666;
+    color: white;
+    width: 40px;
+    height: 40px;
+}
+
+.input-search {
+    border: 1px solid lightgray;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 5px;
+    width: 150px;
+    transition: all 1s;
+}
+
+.input-search:focus {
+
+    width: 400px;
+}
+
+.btn-icon {
+    color: #707987;
+    background-color: white;
+    height: 40px;
+    border: none;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.box-card {
+
+}
+
+.card-stat {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-text {
+    float:left;
+}
+
+.mtb {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.card-number {
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.gray {
+    color: gray;
+}
+
+.left-green {
+    border-left: 4px solid green;
+}
+
+.left-blue {
+    border-left: 4px solid skyblue;
+}
+
+.left-purple {
+    border-left: 4px solid #8f49c9;
+}
+
+.left-yellow {
+    border-left: 4px solid #ebed72;
+}
+
+
+
+.Card-title {
+    font-weight: bold;
+}
+
+ul>li {
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.side-bar {
+    width: 200px;
+    height: 100vh;
+    background-color: #484bb3;
+    position: fixed;
+    z-index: 5;
+    color: white;
+    transition: all 1s;
+    transform: translateX(-150px);
+}
+
+.side-content {  
+/*    display: flex;*/
+    margin-left: 20px;
+    padding: 12px;
+    height: 60px;
+    transition : all 1s;
+}
+
+.side-bar:hover {
+    transform: translateX(0px);
+}
+
+.side-bar:hover .side-content{
+    display: flex;
+}
+
+.side-content i {
+    font-size: 25px;
+}
+
+.side-icon {
+    float: right;
+}
